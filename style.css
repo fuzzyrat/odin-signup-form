@@ -5,3 +5,44 @@
     font-weight: normal;
     font-style: normal;
 }
+
+body {
+    font-family: sans-serif;
+    display: flex;
+}
+
+img {
+    height: 50rem;
+}
+#side-banner {
+    display: inline-block;
+}
+
+#signup-form {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    display: inline;
+}
+
+.content {
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+label, input {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    display: inline;
+}
+
+.user-form {
+    display: flex;
+    gap: 10px;
+}

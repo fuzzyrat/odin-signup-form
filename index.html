@@ -7,15 +7,41 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="header">
-        <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
-        <p>You <em>know</em> you want to.</p>
+    <!-- Get back to this at a later time -->
+    <div id="side-banner"> 
+        <!-- <img src="assets/image.jpg"> -->
     </div>
-    <div id="signup-form">
-        <p>Let's do this!</p>
-        <form>
-            
-        </form>
+    <div class="content">
+        <div id="header">
+            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
+            <p>You <em>know</em> you want to.</p>
+        </div>
+        <div id="signup-form">
+            <p>Let's do this!</p>
+            <form action="http://httpbin.org/post" method="post">
+                <div class="user-form">
+                    <div>
+                        <label for="first_name">First Name</label>
+                        <input type="text" name="first_name" id="first_name">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password">
+                    </div>
+                    <div>
+                        <label for="last_name">Last Name</label>
+                        <input type="text" name="last_name" id="last_name">
+                        <label for="phone_number">Phone Number</label>
+                        <input type="tel" name="phone_number" id="phone_number">
+                        <label for="confirm_password">Confirm Password</label>
+                        <input type="password" name="confirm_password" id="confirm_password">
+                    </div>
+                </div>
+                
+                <button type="submit">Create Account</button>
+            </form>
+            <p>Already have an account? Log in</p>
+        </div>
     </div>
 </body>
 </html>
