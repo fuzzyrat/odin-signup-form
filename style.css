@@ -11,9 +11,39 @@ body {
     display: flex;
 }
 
-img {
-    height: 50rem;
+.background {
+    height: 57.5rem;
+    position: relative;
 }
+
+.logo {
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    height: 300px;
+}
+
+.title {
+    position: absolute;
+    top: 125px;
+    right: 150px;
+    font-size: 100px;
+    font-family: norse_bold;
+}
+
+.side-banner {
+    position: relative;
+    color: white;
+}
+
+#background-image > p {
+    position: absolute;
+    bottom: 0px;
+    left: 20px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
 #side-banner {
     display: inline-block;
 }
@@ -28,9 +58,10 @@ form {
 }
 
 .content {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    padding-top: 50px;
+    padding-left: 25px;
 }
 
 label, input {
@@ -38,11 +69,51 @@ label, input {
     flex-direction: column;
 }
 
+label {
+    padding-top: 10px;
+}
+
 button {
     display: inline;
+    margin-top: 25px;
+    background-color: #596D48;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10px;
+    border: 0;
 }
 
 .user-form {
     display: flex;
-    gap: 10px;
+    gap: 50px;
+}
+
+#header > p {
+    font-weight: bold;
+    max-width: 475px;
+}
+
+label {
+    padding-bottom: 5px;
+    color: black;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+input {
+    border: 2px solid #E5E7EB;
+    margin-bottom: 15px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+input:focus {
+    border-color: blue;
+}
+
+input:invalid {
+    border-color: red;
 }

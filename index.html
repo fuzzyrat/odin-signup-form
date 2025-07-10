@@ -8,8 +8,13 @@
 </head>
 <body>
     <!-- Get back to this at a later time -->
-    <div id="side-banner"> 
-        <!-- <img src="assets/image.jpg"> -->
+    <div class="side-banner"> 
+        <div id="background-image">
+            <img class="background" src="assets/image.jpg">
+            <img class="logo" src="assets/odin_logo.png">
+            <h1 class="title">ODIN</h1>
+            <p>Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA">Unsplash</a></p>
+        </div>
     </div>
     <div class="content">
         <div id="header">
@@ -26,7 +31,7 @@
                         <label for="email">Email</label>
                         <input type="email" name="email" id="email">
                         <label for="password">Password</label>
-                        <input type="password" name="password" id="password">
+                        <input type="password" name="password" id="password" required>
                     </div>
                     <div>
                         <label for="last_name">Last Name</label>
@@ -34,10 +39,9 @@
                         <label for="phone_number">Phone Number</label>
                         <input type="tel" name="phone_number" id="phone_number">
                         <label for="confirm_password">Confirm Password</label>
-                        <input type="password" name="confirm_password" id="confirm_password">
+                        <input type="password" name="confirm_password" id="confirm_password" required>
                     </div>
                 </div>
-                
                 <button type="submit">Create Account</button>
             </form>
             <p>Already have an account? Log in</p>
